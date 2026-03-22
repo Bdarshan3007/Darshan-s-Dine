@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Darshan's Dine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#x1F37D;</span>
+        <span>Darshan's Dine</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="ai-recommend.html">AI Recommender</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="cart.html" class="nav-icon" title="Shopping Cart">&#x1F6D2; <span class="cart-count">3</span>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Shopping Cart</h1>
+      <p>Review your selected items</p>
+    </div>
+  </section>
+
+  <!-- Cart Content -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+        <!-- Cart Items -->
+        <div>
+          <div id="cartItems">
+            <div class="cart-item">
+              <div class="cart-item-info">
+                <div class="cart-item-name">Paneer Butter Masala</div>
+                <div class="cart-item-price">&#8377;420 each | Veg | Indian</div>
+              </div>
+              <div class="cart-item-controls">
+                <div class="quantity-control">
+                  <button type="button" aria-label="Decrease quantity" disabled>-</button>
+                  <span class="quantity-value">1</span>
+                  <button type="button" aria-label="Increase quantity" disabled>+</button>
+                </div>
+                <div class="cart-line-total-wrap">
+                  <div class="cart-line-total">&#8377;420.00</div>
+                </div>
+                <button class="btn-remove" type="button" disabled>Remove</button>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-item-info">
+                <div class="cart-item-name">Chicken Hakka Noodles</div>
+                <div class="cart-item-price">&#8377;420 each | Non-Veg | Chinese</div>
+              </div>
+              <div class="cart-item-controls">
+                <div class="quantity-control">
+                  <button type="button" aria-label="Decrease quantity" disabled>-</button>
+                  <span class="quantity-value">2</span>
+                  <button type="button" aria-label="Increase quantity" disabled>+</button>
+                </div>
+                <div class="cart-line-total-wrap">
+                  <div class="cart-line-total">&#8377;840.00</div>
+                </div>
+                <button class="btn-remove" type="button" disabled>Remove</button>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-item-info">
+                <div class="cart-item-name">Mango Lassi</div>
+                <div class="cart-item-price">&#8377;120 each | Beverage</div>
+              </div>
+              <div class="cart-item-controls">
+                <div class="quantity-control">
+                  <button type="button" aria-label="Decrease quantity" disabled>-</button>
+                  <span class="quantity-value">1</span>
+                  <button type="button" aria-label="Increase quantity" disabled>+</button>
+                </div>
+                <div class="cart-line-total-wrap">
+                  <div class="cart-line-total">&#8377;120.00</div>
+                </div>
+                <button class="btn-remove" type="button" disabled>Remove</button>
+              </div>
+            </div>
+
+            <div class="alert alert-info mt-3">
+              After order placement,your orders cannot be modified or cancelled. 
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Summary -->
+        <div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Order Summary</h3>
+              <div id="cartSummary" class="min-h-300">
+                <div class="cart-total-row">
+                  <span>Items (4)</span>
+                  <span>&#8377;1,380.00</span>
+                </div>
+                <div class="cart-total-row">
+                  <span>Delivery Fee</span>
+                  <span>&#8377;40.00</span>
+                </div>
+                <div class="cart-total-row">
+                  <span>GST (5%)</span>
+                  <span>&#8377;71.00</span>
+                </div>
+                <div class="cart-total-row">
+                  <span>Coupon (WELCOME10)</span>
+                  <span>-&#8377;138.00</span>
+                </div>
+                <div class="cart-total-row">
+                  <span>Payable Total</span>
+                  <span>&#8377;1,353.00</span>
+                </div>
+
+                <div class="mt-3">
+                  <h4 class="card-title">Required Details</h4>
+                  <p class="text-secondary mb-1"><strong>Name:</strong> Aarav Mehta</p>
+                  <p class="text-secondary mb-1"><strong>Phone:</strong> +91-98XXXXXX21</p>
+                  <p class="text-secondary mb-1"><strong>Address:</strong> Bandra West, Mumbai</p>
+                  <p class="text-secondary mb-1"><strong>Delivery Slot:</strong> 8:15 PM - 8:30 PM</p>
+                  <p class="text-secondary"><strong>Payment:</strong> UPI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Actions -->
+      <div class="mt-4 flex gap-2 wrap-center">
+        <a href="menu.html" class="btn btn-secondary">Continue Shopping</a>
+        <a href="menu.html" class="btn btn-warning">Reset Selection</a>
+        <a href="checkout.html" class="btn btn-primary" id="checkoutBtn">Proceed to Checkout</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Darshan's Dine is a premium restaurant offering authentic Indian, Chinese, and Continental cuisines.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="ai-recommend.html">AI Recommender</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Restaurant</h3>
+        <p>&#x1F4CD; Mumbai, India</p>
+        <p>&#x1F4DE; +91-XXXX-XXXX-XX</p>
+        <p>&#x2709; hello@darshansdine.com</p>
+        <p>&#x1F550; Open Tue-Sun, 11 AM - 11 PM</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-icon" title="Facebook">f</a>
+          <a href="#" class="social-icon" title="Instagram">IG</a>
+          <a href="#" class="social-icon" title="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Darshan's Dine. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Add custom styles for cart page -->
+<!-- Scripts -->
+
+
+</body>
+</html>
+
+
+
+
+
+
+

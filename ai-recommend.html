@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Food Recommender - Darshan's Dine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#x1F37D;</span>
+        <span>Darshan's Dine</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="ai-recommend.html" class="active">AI Recommender</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="cart.html" class="nav-icon" title="Shopping Cart">&#x1F6D2; <span class="cart-count cart-count-hidden">0</span>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>AI Food Recommender</h1>
+      <p>Find your perfect dish based on your preferences</p>
+    </div>
+  </section>
+
+  <!-- Recommendation Content -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+        <!-- Preference Form -->
+        <div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title mb-3">Tell Us Your Preferences</h3>
+
+              <form id="recommendationForm">
+                <!-- Veg/Non-Veg Selection -->
+                <div class="form-group">
+                  <label>Dietary Preference</label>
+                  <div class="option-grid">
+                    <label class="choice-card">
+                      <input type="radio" name="vegType" value="veg" class="choice-input">
+                      <span>Vegetarian</span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="vegType" value="nonveg" class="choice-input">
+                      <span>Non-Vegetarian</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Cuisine Selection -->
+                <div class="form-group">
+                  <label>Preferred Cuisine</label>
+                  <select id="cuisine" required class="select-primary">
+                    <option value="">Select a cuisine</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Continental">Continental</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Select Meal Type</label>
+                  <select id="mealType" class="select-primary">
+                    <option value="">Choose meal type</option>
+                    <option value="quick-bites">Quick Bites</option>
+                    <option value="family-dinner">Family Dinner</option>
+                    <option value="party-order">Party Order</option>
+                    <option value="light-meal">Light Meal</option>
+                  </select>
+                </div>
+
+                <!-- Spice Level Selection -->
+                <div class="form-group">
+                  <label>Spice Level</label>
+                  <div class="option-grid spicy-grid">
+                    <label class="choice-card choice-card-center">
+                      <input type="radio" name="spicy" value="1" class="choice-input-hidden">
+                      <span>Mild</span>
+                    </label>
+                    <label class="choice-card choice-card-center">
+                      <input type="radio" name="spicy" value="2" class="choice-input-hidden">
+                      <span>Low</span>
+                    </label>
+                    <label class="choice-card choice-card-center">
+                      <input type="radio" name="spicy" value="3" class="choice-input-hidden">
+                      <span>Medium</span>
+                    </label>
+                    <label class="choice-card choice-card-center">
+                      <input type="radio" name="spicy" value="4" class="choice-input-hidden">
+                      <span>Hot</span>
+                    </label>
+                    <label class="choice-card choice-card-center">
+                      <input type="radio" name="spicy" value="5" class="choice-input-hidden">
+                      <span>Extra Hot</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Budget Selection -->
+                <div class="form-group">
+                  <label>Budget per Dish</label>
+                  <div class="option-grid budget-grid">
+                    <label class="choice-card choice-card-center choice-card-column">
+                      <input type="radio" name="budget" value="300" class="choice-input-hidden">
+                      <span>Economy</span>
+                      <small>&lt; &#8377;300</small>
+                    </label>
+                    <label class="choice-card choice-card-center choice-card-column">
+                      <input type="radio" name="budget" value="500" class="choice-input-hidden">
+                      <span>Standard</span>
+                      <small>&#8377;300-500</small>
+                    </label>
+                    <label class="choice-card choice-card-center choice-card-column">
+                      <input type="radio" name="budget" value="1000" class="choice-input-hidden">
+                      <span>Premium</span>
+                      <small>&gt; &#8377;500</small>
+                    </label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full mt-3">Get Recommendations</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommendations Display -->
+        <div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title mb-3">Personalized Recommendations</h3>
+              <div id="recommendationResults">
+                <!-- <p class="text-secondary text-center pad-2">
+                  JavaScript-free mode: browse the full menu to pick dishes manually.
+                </p> -->
+                <div class="text-center">
+                  <a href="menu.html" class="btn btn-primary btn-small">View Menu</a>
+                </div>
+
+                <div class="mt-4">
+                  <h4 class="card-title">Popular Picks Right Now</h4>
+
+                  <div class="card mb-2">
+                    <div class="card-content">
+                      <div class="flex-between">
+                        <h5 class="card-title">Paneer Butter Masala</h5>
+                        <span class="card-price">&#8377;420</span>
+                      </div>
+                      <p class="card-description">Creamy and mildly spiced paneer curry, best with naan.</p>
+                      <span class="card-badge">Veg</span>
+                      <span class="card-badge">Indian</span>
+                    </div>
+                  </div>
+
+                  <div class="card mb-2">
+                    <div class="card-content">
+                      <div class="flex-between">
+                        <h5 class="card-title">Chicken Hakka Noodles</h5>
+                        <span class="card-price">&#8377;420</span>
+                      </div>
+                      <p class="card-description">Wok-tossed noodles with juicy chicken and crunchy vegetables.</p>
+                      <span class="card-badge">Non-Veg</span>
+                      <span class="card-badge">Chinese</span>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="flex-between">
+                        <h5 class="card-title">Tikka Masala Pasta</h5>
+                        <span class="card-price">&#8377;380</span>
+                      </div>
+                      <p class="card-description">A fusion favorite with creamy tikka sauce and pasta.</p>
+                      <span class="card-badge">Veg</span>
+                      <span class="card-badge">Continental</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Darshan's Dine is a premium restaurant offering authentic Indian, Chinese, and Continental cuisines.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="ai-recommend.html">AI Recommender</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Restaurant</h3>
+        <p>&#x1F4CD; Mumbai, India</p>
+        <p>&#x1F4DE; +91-XXXX-XXXX-XX</p>
+        <p>&#x2709; hello@darshansdine.com</p>
+        <p>&#x1F550; Open Tue-Sun, 11 AM - 11 PM</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-icon" title="Facebook">f</a>
+          <a href="#" class="social-icon" title="Instagram">IG</a>
+          <a href="#" class="social-icon" title="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Darshan's Dine. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+
+
+</body>
+</html>
+
+
+
+
+
+

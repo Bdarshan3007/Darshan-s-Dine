@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshan's Dine - Premium Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#x1F37D;</span>
+        <span>Darshan's Dine</span>
+      </a>
+
+      <input class="menu-toggle" id="menu-toggle" type="checkbox" aria-label="Toggle navigation menu">
+      <label class="hamburger" for="menu-toggle" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="ai-recommend.html">AI Recommender</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="cart.html" class="nav-icon" title="Shopping Cart">
+          &#x1F6D2;
+          <span class="cart-count">1</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Darshan's Dine</h1>
+      <p>Experience the finest culinary delights with our premium restaurant</p>
+      <div class="hero-actions mt-4">
+        <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+        <a href="ai-recommend.html" class="btn btn-secondary">Get AI Recommendation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured section">
+    <div class="container">
+      <div class="section-title">
+        <h2>&#x1F31F; Featured Dishes</h2>
+        <p>Our most loved dishes</p>
+      </div>
+
+      <div class="featured-grid">
+        <div class="card animate-up">
+          <div class="card-image">
+            <img src="images/paneer-butter-masala.webp" alt="Paneer Butter Masala"></div>
+          <div class="card-content">
+            <h3 class="card-title">Paneer Butter Masala</h3>
+            <p class="card-description">Creamy butter sauce with soft paneer cubes - a classic favorite</p>
+            <div class="mb-2">
+              <span class="card-badge">&#x1F331; Vegetarian</span>
+              <span class="card-badge">Indian</span>
+            </div>
+            <div class="flex-between">
+              <span class="card-price">&#8377;420</span>
+              <a class="btn btn-primary btn-small" href="menu.html">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-up">
+          <div class="card-image">
+            <img src="images/butter-chicken.webp" alt="Butter Chicken"></div>
+          <div class="card-content">
+            <h3 class="card-title">Butter Chicken</h3>
+            <p class="card-description">Tender chicken in rich tomato-based butter sauce</p>
+            <div class="mb-2">
+              <span class="card-badge">&#x1F357; Non-Veg</span>
+              <span class="card-badge">Indian</span>
+            </div>
+            <div class="flex-between">
+              <span class="card-price">&#8377;480</span>
+              <a class="btn btn-primary btn-small" href="menu.html">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-up">
+          <div class="card-image">
+            <img src="images/schezwan-noodles.webp" alt="Schezwan Noodles"></div>
+          <div class="card-content">
+            <h3 class="card-title">Schezwan Noodles</h3>
+            <p class="card-description">Spicy chili sauce noodles with fresh vegetables</p>
+            <div class="mb-2">
+              <span class="card-badge">&#x1F331; Vegetarian</span>
+              <span class="card-badge">Chinese</span>
+            </div>
+            <div class="flex-between">
+              <span class="card-price">&#8377;350</span>
+              <a class="btn btn-primary btn-small" href="menu.html">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>&#x1F389; Special Offers</h2>
+        <p>Limited time deals just for you</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-image offer-card-image">
+            <div class="offer-icon">&#x1F381;</div>
+            <div class="offer-code-wrap">
+              <strong class="offer-code">WELCOME10</strong>
+              <span>10% OFF</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Welcome Offer</h3>
+            <p class="card-description">Get 10% discount on your first order with code WELCOME10</p>
+            <a href="menu.html" class="btn btn-primary btn-small">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image offer-card-image">
+            <div class="offer-icon">&#x1F4B0;</div>
+            <div class="offer-code-wrap">
+              <strong class="offer-code">DARSHAN20</strong>
+              <span>&#8377;20 OFF</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Group Dining</h3>
+            <p class="card-description">Save &#8377;20 on orders above &#8377;200 with code DARSHAN20</p>
+            <a href="menu.html" class="btn btn-primary btn-small">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-secondary">
+    <div class="container">
+      <div class="section-title">
+        <h2>&#x2728; Why Choose Us</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card card-transparent">
+          <div class="card-image reason-icon"><img src="images/expert_chefs.jpg" alt=""></div>
+          <div class="card-content text-center">
+            <h3 class="card-title">Expert Chefs</h3>
+            <p class="card-description">Our master chefs bring years of culinary excellence</p>
+          </div>
+        </div>
+
+        <div class="card card-transparent">
+          <div class="card-image reason-icon"><img src="images/premium_quality.avif" alt=""></div>
+          <div class="card-content text-center">
+            <h3 class="card-title">Premium Quality</h3>
+            <p class="card-description">Only the finest ingredients used in every dish</p>
+          </div>
+        </div>
+
+        <div class="card card-transparent">
+          <div class="card-image reason-icon"><img src="images/AI_Recommendations.webp" alt=""></div>
+          <div class="card-content text-center">
+            <h3 class="card-title">AI Recommendations</h3>
+            <p class="card-description">Personalized dish suggestions based on your preferences</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="container text-center">
+      <h2 class="mb-3">Ready to Order?</h2>
+      <p class="mb-4">Browse our complete menu and discover your new favorite dish!</p>
+      <div class="flex-center gap-2 cta-actions">
+        <a href="menu.html" class="btn btn-primary">&#x1F37D; View Full Menu</a>
+        <a href="ai-recommend.html" class="btn btn-secondary">&#x1F916; AI Recommender</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Darshan's Dine is a premium restaurant offering authentic Indian, Chinese, and Continental cuisines with a
+          modern twist.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="ai-recommend.html">AI Recommender</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Restaurant</h3>
+        <p>&#x1F4CD; Mumbai, India</p>
+        <p>&#x1F4DE; +91-XXXX-XXXX-XX</p>
+        <p>&#x2709; hello@darshansdine.com</p>
+        <p>&#x1F550; Open Tue-Sun, 11 AM - 11 PM</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-icon" title="Facebook">f</a>
+          <a href="#" class="social-icon" title="Instagram">IG</a>
+          <a href="#" class="social-icon" title="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Darshan's Dine. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+          Service</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+
+
+
+
+

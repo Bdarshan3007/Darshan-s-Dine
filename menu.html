@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Darshan's Dine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#x1F37D;</span>
+        <span>Darshan's Dine</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="ai-recommend.html">AI Recommender</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="cart.html" class="nav-icon" title="Shopping Cart">&#x1F6D2; <span class="cart-count cart-count-hidden">0</span>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our Menu</h1>
+      <p>Discover our exquisite collection of culinary delights</p>
+    </div>
+  </section>
+
+  <!-- Menu Content -->
+  <section class="section">
+    <div class="container">
+      <div id="menuContainer">
+        <!-- Starters Section -->
+        <div class="section-title">
+          <h2>Starters</h2>
+          <p>Begin your culinary journey</p>
+        </div>
+        <div class="featured-grid">
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/paneer-tikka.jpeg" alt="Paneer Tikka"></div>
+            <div class="card-content">
+              <h3 class="card-title">Paneer Tikka</h3>
+              <p class="card-description">Marinated paneer chunks grilled to perfection</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;320</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/tandoori-chicken.png" alt="Tandoori Chicken"></div>
+            <div class="card-content">
+              <h3 class="card-title">Tandoori Chicken</h3>
+              <p class="card-description">Juicy tandoori chicken coated with aromatic spices</p>
+              <div class="mb-2"><span class="card-badge">Non-Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;380</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="/images/spring-roll.jpg" alt="Spring Rolls"></div>
+            <div class="card-content">
+              <h3 class="card-title">Spring Rolls</h3>
+              <p class="card-description">Crispy spring rolls filled with vegetables and sauce</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;250</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/manchurian-veg..jpg" alt="Manchurian (Veg)"></div>
+            <div class="card-content">
+              <h3 class="card-title">Manchurian (Veg)</h3>
+              <p class="card-description">Golden fried cauliflower in spicy manchurian sauce</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;280</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/manchurian-chicken.jpg" alt="Chicken Manchurian"></div>
+            <div class="card-content">
+              <h3 class="card-title">Chicken Manchurian</h3>
+              <p class="card-description">Tender chicken pieces in savory manchurian gravy</p>
+              <div class="mb-2"><span class="card-badge">Non-Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;320</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/aloo-tikki.jpg" alt="Aloo Tikki"></div>
+            <div class="card-content">
+              <h3 class="card-title">Aloo Tikki</h3>
+              <p class="card-description">Crispy potato patties with mint chutney</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;200</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/samosa.webp" alt="Samosa"></div>
+            <div class="card-content">
+              <h3 class="card-title">Samosa</h3>
+              <p class="card-description">Triangular pastry filled with spiced potatoes and peas</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;150</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/garlic-bread.jpg" alt="Garlic Bread"></div>
+            <div class="card-content">
+              <h3 class="card-title">Garlic Bread</h3>
+              <p class="card-description">Toasted bread with garlic butter and herbs</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;180</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/fish-fingers.jpg" alt="Fish Fingers"></div>
+            <div class="card-content">
+              <h3 class="card-title">Fish Fingers</h3>
+              <p class="card-description">Crispy battered fish served with tartar sauce</p>
+              <div class="mb-2"><span class="card-badge">Non-Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;350</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/onion-pakora.jpg" alt="Onion Pakora"></div>
+            <div class="card-content">
+              <h3 class="card-title">Onion Pakora</h3>
+              <p class="card-description">Sliced onions dipped in spiced gram flour batter and fried</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;170</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Course Section -->
+        <div class="section-title section-title section-title-spaced">
+          <h2>Main Course</h2>
+          <p>Our signature dishes</p>
+        </div>
+        <div class="featured-grid">
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/paneer-butter-masala.webp" alt="Paneer Butter Masala"></div>
+            <div class="card-content">
+              <h3 class="card-title">Paneer Butter Masala</h3>
+              <p class="card-description">Creamy butter sauce with soft paneer cubes</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;420</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/butter-chicken.webp" alt="Butter Chicken"></div>
+            <div class="card-content">
+              <h3 class="card-title">Butter Chicken</h3>
+              <p class="card-description">Tender chicken in rich tomato-based butter sauce</p>
+              <div class="mb-2"><span class="card-badge">Non-Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;480</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/schezwan-noodles.webp" alt="Schezwan Noodles"></div>
+            <div class="card-content">
+              <h3 class="card-title">Schezwan Noodles</h3>
+              <p class="card-description">Spicy chili sauce noodles with fresh vegetables</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;350</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/hakka-noodles.jpg" alt="Hakka Noodles"></div>
+            <div class="card-content">
+              <h3 class="card-title">Hakka Noodles</h3>
+              <p class="card-description">Fragrant noodles tossed with soy sauce and vegetables</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;320</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/chicken-hakka.webp" alt="Chicken Hakka Noodles"></div>
+            <div class="card-content">
+              <h3 class="card-title">Chicken Hakka Noodles</h3>
+              <p class="card-description">Tender chicken with aromatic hakka noodles</p>
+              <div class="mb-2"><span class="card-badge">Non-Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;420</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/veg-biryani.webp" alt="Biryani (Veg)"></div>
+            <div class="card-content">
+              <h3 class="card-title">Biryani (Veg)</h3>
+              <p class="card-description">Fragrant basmati rice cooked with vegetables and spices</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;380</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/chicken-biryani.jpg" alt="Chicken Biryani"></div>
+            <div class="card-content">
+              <h3 class="card-title">Chicken Biryani</h3>
+              <p class="card-description">Royal Hyderabadi style biryani with tender chicken</p>
+              <div class="mb-2"><span class="card-badge">Non-Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;480</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/dal-makhani.jpg" alt="Dal Makhani"></div>
+            <div class="card-content">
+              <h3 class="card-title">Dal Makhani</h3>
+              <p class="card-description">Creamy black lentils cooked with kidney beans and butter</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;380</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/rogan-josh.webp" alt="Rogan Josh"></div>
+            <div class="card-content">
+              <h3 class="card-title">Rogan Josh</h3>
+              <p class="card-description">Tender lamb in aromatic tomato and yogurt sauce</p>
+              <div class="mb-2"><span class="card-badge">Non-Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;520</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/chana-masala.png" alt="Chana Masala"></div>
+            <div class="card-content">
+              <h3 class="card-title">Chana Masala</h3>
+              <p class="card-description">Chickpeas in aromatic tomato-based spiced sauce</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;300</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/fried-rice-veg.jpg" alt="Fried Rice (Veg)"></div>
+            <div class="card-content">
+              <h3 class="card-title">Fried Rice (Veg)</h3>
+              <p class="card-description">Steamed rice stir-fried with mixed vegetables and soy sauce</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;320</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/chicken-fried-rice.webp" alt="Chicken Fried Rice"></div>
+            <div class="card-content">
+              <h3 class="card-title">Chicken Fried Rice</h3>
+              <p class="card-description">Tender chicken with stir-fried rice and vegetables</p>
+              <div class="mb-2"><span class="card-badge">Non-Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;420</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/garlic-noodles-veg.jpg" alt="Garlic Noodles (Veg)"></div>
+            <div class="card-content">
+              <h3 class="card-title">Garlic Noodles (Veg)</h3>
+              <p class="card-description">Roasted garlic flavored noodles with mixed vegetables</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Chinese</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;300</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/tikka-pasta.jpg" alt="Tikka Masala Pasta"></div>
+            <div class="card-content">
+              <h3 class="card-title">Tikka Masala Pasta</h3>
+              <p class="card-description">Pasta in creamy tikka masala sauce with paneer cubes</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;380</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <div class="section-title section-title section-title-spaced">
+          <h2>Desserts</h2>
+          <p>Sweet endings</p>
+        </div>
+        <div class="featured-grid">
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/gulab-jamun.jpg" alt="Gulab Jamun"></div>
+            <div class="card-content">
+              <h3 class="card-title">Gulab Jamun</h3>
+              <p class="card-description">Soft milk solids in warm sugar syrup</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;180</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/ice-cream-sundae.jpg" alt="Ice Cream Sundae"></div>
+            <div class="card-content">
+              <h3 class="card-title">Ice Cream Sundae</h3>
+              <p class="card-description">Vanilla ice cream with chocolate sauce and toppings</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;200</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/kheer.jpg" alt="Kheer"></div>
+            <div class="card-content">
+              <h3 class="card-title">Kheer</h3>
+              <p class="card-description">Creamy rice pudding with cardamom and nuts</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;150</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/chocolate-cake.jpg" alt="Chocolate Cake"></div>
+            <div class="card-content">
+              <h3 class="card-title">Chocolate Cake</h3>
+              <p class="card-description">Rich chocolate cake with chocolate ganache</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;220</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/jalebi.jpg" alt="Jalebi"></div>
+            <div class="card-content">
+              <h3 class="card-title">Jalebi</h3>
+              <p class="card-description">Spiral-shaped Indian sweet in sugar syrup</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;140</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/barfi.jpg" alt="Barfi"></div>
+            <div class="card-content">
+              <h3 class="card-title">Barfi</h3>
+              <p class="card-description">Diamond-shaped milk fudge with nuts and dry fruits</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;160</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/brownie.jpg" alt="Brownie"></div>
+            <div class="card-content">
+              <h3 class="card-title">Brownie</h3>
+              <p class="card-description">Fudgy chocolate brownie with ice cream</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;210</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/rasmalai.jpg" alt="Rasmalai"></div>
+            <div class="card-content">
+              <h3 class="card-title">Rasmalai</h3>
+              <p class="card-description">Soft paneer dumplings in creamy cardamom milk</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;190</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/mango-kulfi.jpg" alt="Mango Kulfi"></div>
+            <div class="card-content">
+              <h3 class="card-title">Mango Kulfi</h3>
+              <p class="card-description">Creamy frozen mango ice cream on a stick</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;120</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drinks Section -->
+        <div class="section-title section-title section-title-spaced">
+          <h2>Drinks</h2>
+          <p>Refreshing beverages</p>
+        </div>
+        <div class="featured-grid">
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/mango-lassi.jpg" alt="Mango Lassi"></div>
+            <div class="card-content">
+              <h3 class="card-title">Mango Lassi</h3>
+              <p class="card-description">Fresh yogurt drink blended with mango pulp</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;120</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/masala-chai.jpg" alt="Masala Chai"></div>
+            <div class="card-content">
+              <h3 class="card-title">Masala Chai</h3>
+              <p class="card-description">Traditional Indian tea with aromatic spices</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;80</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/iced-tea.jpg" alt="Iced Tea"></div>
+            <div class="card-content">
+              <h3 class="card-title">Iced Tea</h3>
+              <p class="card-description">Refreshing chilled tea with lemon</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;100</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/orange-juice.jpg" alt="Fresh Orange Juice"></div>
+            <div class="card-content">
+              <h3 class="card-title">Fresh Orange Juice</h3>
+              <p class="card-description">Freshly squeezed orange juice</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;150</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/buttermilk.jpg" alt="Buttermilk"></div>
+            <div class="card-content">
+              <h3 class="card-title">Buttermilk</h3>
+              <p class="card-description">Chilled buttermilk with cumin and salt</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;90</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/cold-coffee.jpg" alt="Cold Coffee"></div>
+            <div class="card-content">
+              <h3 class="card-title">Cold Coffee</h3>
+              <p class="card-description">Iced coffee with milk and cream topping</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;140</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/strawberry-smoothie.jpg" alt="Strawberry Smoothie"></div>
+            <div class="card-content">
+              <h3 class="card-title">Strawberry Smoothie</h3>
+              <p class="card-description">Blended strawberry drink with yogurt and honey</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Continental</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;160</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+          <div class="card animate-up">
+            <div class="card-image"><img src="images/jaljeera.jpg" alt="Jaljeera"></div>
+            <div class="card-content">
+              <h3 class="card-title">Jaljeera</h3>
+              <p class="card-description">Traditional Indian cumin water with mint and spices</p>
+              <div class="mb-2"><span class="card-badge">Veg</span><span class="card-badge">Indian</span></div>
+              <div class="flex-between"><span class="card-price">&#8377;80</span><a class="btn btn-primary btn-small" href="cart.html">Order</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Darshan's Dine is a premium restaurant offering authentic Indian, Chinese, and Continental cuisines.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="ai-recommend.html">AI Recommender</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Restaurant</h3>
+        <p>&#x1F4CD; Mumbai, India</p>
+        <p>&#x1F4DE; +91-XXXX-XXXX-XX</p>
+        <p>&#x2709; hello@darshansdine.com</p>
+        <p>&#x1F550; Open Tue-Sun, 11 AM - 11 PM</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-icon" title="Facebook">f</a>
+          <a href="#" class="social-icon" title="Instagram">IG</a>
+          <a href="#" class="social-icon" title="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Darshan's Dine. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+
+</body>
+</html>
+
+
+
+
+
+
+
